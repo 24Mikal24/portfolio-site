@@ -1,0 +1,25 @@
+.body {
+    margin: auto;
+    width: 60%;
+}
+
+.copyright {
+    margin-top: 2rem;
+}
+
+footer ul {
+    padding-left: 2rem;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
