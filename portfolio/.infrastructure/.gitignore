@@ -1,0 +1,11 @@
+# Local .terraform directories
+.terraform/*
+
+config.s3.tfbackend
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# env
+.env
