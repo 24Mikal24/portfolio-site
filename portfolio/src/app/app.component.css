@@ -1,25 +1,53 @@
 .body {
+    font-size: 1rem;
     margin: auto;
-    width: 60%;
+    max-width: 75ch;
+    padding-top: 5rem;
 }
 
 .copyright {
+    font-size: .8rem;
     margin-top: 2rem;
 }
 
+footer {
+    margin-bottom: 2rem;
+}
+
 footer ul {
-    padding-left: 2rem;
+    list-style-type: none;
+}
+
+h1 {
+    color: #f3f4f6;
+    font-size: 2.25em;
+    font-weight: 800;
+    letter-spacing: -.03em;
+    line-height: 1.11111;
+    margin-bottom: .888889em;
+    margin-top: 0;
+}
+
+hr {
+    border-color: #1f2937;
+    border-top-width: 1px;
+    height: 0;
+    margin-bottom: 3em;
+    margin-top: 3em;
 }
 
 nav {
+    margin-bottom: 2rem;
     width: 100%;
 }
 
 nav ul {
     display: flex;
+    gap: .75rem;
+    list-style-type: none;
     justify-content: end;
 }
 
 nav ul li {
-    margin-right: 1rem;
+    margin-right: .3rem;
 }
