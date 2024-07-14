@@ -9,7 +9,7 @@ resource "random_id" "bucket_suffix" {
 }
 
 resource "aws_s3_bucket" "main" {
-  bucket = "mike-archers-site-${random_id.bucket_suffix.hex}"
+  bucket = "mikearcher.dev-${random_id.bucket_suffix.hex}"
 }
 
 resource "aws_s3_bucket_public_access_block" "static_website" {
