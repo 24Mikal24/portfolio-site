@@ -4,7 +4,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
+    { path: '', redirectTo: '/about', pathMatch: 'full' },
     { path: 'about', component: AboutComponent, data: {pageTitle: 'About'} },
     { path: 'contact', component: ContactComponent, data: {pageTitle: 'Contact'} },
-    { path: 'resume', component: ResumeComponent, data: {pageTitle: 'Resume'} }
+    { path: 'resume', component: ResumeComponent, data: {pageTitle: 'Resume'} },
+    { path: '**', redirectTo: '/about'}
 ];
