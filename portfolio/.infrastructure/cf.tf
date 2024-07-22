@@ -21,7 +21,7 @@ resource "aws_cloudfront_distribution" "www_s3_distribution" {
     error_caching_min_ttl = 0
     error_code            = 404
     response_code         = 200
-    response_page_path    = "/404.html"
+    response_page_path    = "/index.html"
   }
 
   default_cache_behavior {
@@ -62,7 +62,7 @@ resource "aws_cloudfront_distribution" "www_s3_distribution" {
 # Cloudfront S3 for redirect to www.
 resource "aws_cloudfront_distribution" "root_s3_distribution" {
   origin {
-    domain_name = aws_s3_bucket.root_bucket.bucket_regional_domain_name
+    domain_name = aws_s3_bucket_website_configuration.root_bucket_config.website_endpoint
     origin_id   = "S3-.${var.bucket_name}"
     custom_origin_config {
       http_port              = 80

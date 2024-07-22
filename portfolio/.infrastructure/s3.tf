@@ -73,7 +73,7 @@ resource "aws_s3_bucket_website_configuration" "www_bucket_config" {
 resource "aws_s3_bucket_website_configuration" "root_bucket_config" {
   bucket = aws_s3_bucket.root_bucket.id
   redirect_all_requests_to {
-    host_name = "https://www.${var.domain_name}"
+    host_name = "www.${var.domain_name}"
   }
 }
 
