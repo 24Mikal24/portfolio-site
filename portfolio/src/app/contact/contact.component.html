@@ -1,16 +1,22 @@
 <form [formGroup]="form">
-    <div>
-        <input placeholder="Name"
+    <div class="grid">
+        <input class="col-6"
+               placeholder="Name"
                type="text"
                formControlName="name"/>
-        <input placeholder="Email"
+        <input class="col-6"
+               placeholder="Email"
                type="text"
                formControlName="email"/>
-        <input placeholder="Subject"
+        <input class="col-12"
+               placeholder="Subject"
                type="text"
                formControlName="subject"/>
-        <textarea placeholder="message"
+        <textarea class="col-12"
+                  placeholder="Message"
                   formControlName="message"></textarea>
+        <div class="col-12 flex justify-end m-5 p-0">
+            <button class="p-5" type="button" (click)="sendEmail()"><span>Send</span></button>
+        </div>
     </div>
 </form>
-<button type="button" (click)="sendEmail()">Send</button>

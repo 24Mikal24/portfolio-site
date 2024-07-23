@@ -3,6 +3,13 @@
     border: 0 solid #e5e7eb;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 a {
     color: #f3f4f6;
 }
@@ -22,8 +29,46 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.col-6 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: calc(50% - 10px);
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: calc(100% - 10px);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 html {
     font-size: 16px;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.m-5 {
+    margin: 5px;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-5 {
+    padding: 0.8rem;
 }
 
 p {
