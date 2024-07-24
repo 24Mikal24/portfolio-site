@@ -7,5 +7,8 @@ config.s3.tfbackend
 *.tfstate
 *.tfstate.*
 
+# lambda
+my-deployment-package.zip
+
 # env
 .env
